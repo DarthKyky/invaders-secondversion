@@ -33,7 +33,7 @@ void player_move(int x, int y, struct event* event, struct game* game);
 
 void move_bullets(int num_enemies);
 
-void fire();
+void fire(int player_x, int player_y);
 
 void create_enemies();
 
