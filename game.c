@@ -180,12 +180,12 @@ void display_menu() {
                     mvprintw(y+5, COLS/2 - 15, "Q - Instant exit from the game");
                     wrefresh(menu_win);
                     refresh();
-                    getch();
+                    wgetch(menu_win);
                     clear_screen();
                     break;
                 }
                 if(highlight == 3){
-                                        clear();
+                    clear();
                     box(menu_win, 0, 0);
                     refresh();
                     mvprintw(3, 1, " ________  ________  ________  ________  _______           ___  ________   ___      ___ ________  ________  _______   ________  ________      ");
@@ -204,7 +204,7 @@ void display_menu() {
                     mvprintw(y+5, COLS/2 - 4, "Q - quit");
                     wrefresh(rule_win);
                     refresh();
-                    getch();
+                    wgetch(rule_win);
                     clear_screen();
                     break;
                 }
